@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    border-radius: 0 0 0 70px;
+    background-image:linear-gradient(90deg,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    
+    
+}
+
+/* Navigation */
+.navbar{
+    background-image: url(images/bg-pattern-intro.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 180%;
+}
+
+
+.logo{
+    
+}
+
+.btn button{
+    position: relative;
+    right: 50px;
+    top: -10;
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    background: transparent;
+    color: hsl(240, 2%, 88%);
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    
+}
+.btn .btn-signup{
+    background-color: white;
+    color: hsl(355, 100%, 74%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+.btn button:hover{
+    background: transparent;
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+}
+
+
+.sub-menu-product li,.sub-menu-company li, .sub-menu-connect li{
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sub-menu-product>li,.sub-menu-company>li, .sub-menu-connect>li{
+    text-decoration: none;
+    color: hsl(240, 2%, 88%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+
+}
+
+.sub-menu-product>li:hover,.sub-menu-company>li:hover, .sub-menu-connect>li:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sub-menu-product ul,.sub-menu-company ul,.sub-menu-connect ul{
+    background-color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    box-shadow: hsl(240, 2%, 79%);
+    z-index: 5;
+}
+
+.logo{
+    margin: 40px 0px 60px 100px; 
+}
+
+.sub-menu-product{
+
+    margin-left: -420px;
+}
+
+.sub-menu-company{
+    
+    margin-left: -480px;
+}
+
+.sub-menu-connect{
+    
+    margin-left: -480px;
+}
+
+.sub-menu-product li a, .sub-menu-company li a, .sub-menu-connect li a{
+    color: black;
+    font-size: 13px;
+    margin: 80px 0 0 -62px;    
+    text-decoration: none;
+}
+
+.sub-menu-product li a:hover,.sub-menu-company li a:hover,.sub-menu-connect li a:hover{
+    font-weight: bold;
+}
+
+.sub-menu-product ul{
+    margin-left: -20px;
+    padding: 5px 30px 5px 80px;
+}
+
+.sub-menu-company ul{
+    margin-left: -20px;
+    padding: 5px 30px 5px 85px;
+}
+
+.sub-menu-connect ul{
+    margin-left: -18px;
+    padding: 10px 30px 10px 70px;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    margin-top: 18px;
+    font-size: 10px;
+    z-index: 1;
+}
+
+
+.dropdown li {
+    padding: 20px 20px 10px 20px;
+  
+}
+
+.sub-menu-product:hover .dropdown,.sub-menu-company:hover .dropdown,.sub-menu-connect:hover .dropdown{
+    display: block;
+    position: absolute;
+}
+
+
+
+/* Banner */
+
+.main{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.main h1{
+    color: white;    
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+}
+
+.main p{
+    color: #d2d1d1;
+}
+
+.button {
+    
+    /* margin-top: 80px;
+    border-radius: 0 0 0 80px;
+    background-image:linear-gradient(90deg,hsl(13, 100%, 72%),hsl(353, 100%, 62%)); */
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+.button a{
+    text-decoration: none;
+    list-style: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.button .btn1{
+    background-color: white;
+    color: hsl(355, 100%, 74%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+.button .btn2{
+    background-color: transparent;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    border: 2px solid white;
+}
+
+.btn1:hover{
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+.btn2:hover{
+    background-color: white;
+    color: hsl(355, 100%, 74%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+.hamburger{
+    display: none;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .navbar{
+        margin-bottom: -50px;
+    }
+    .logo img{
+        margin-top: 20px;
+        margin-left: -70px;
+    }
+    .sub-menu-product, .sub-menu-company, .sub-menu-connect{
+        display: none;
+    }
+    .navbar .btn{
+        display: none;
+    }
+    .hamburger{
+        margin-right: 20px;
+        display: block;
+    }
+    .main h1{
+        font-size: 35px;
+        margin: 0px 30px;
+    }
+    .main p{
+        padding: 0 40px;
+        color: white;
+    }
+    .button .btn1{
+        padding: 15px 15px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .button .btn2{
+        margin-left: 10px;
+    }
+    .button .btn2{
+        padding: 15px 24px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+  }
+
+  @media only screen and (min-width: 375px){
+
+    .main1 h3{
+    font-size: 28px;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main1{
+    height: 90vh;
+    background-image: url("images/illustration-editor-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: 720px;
+    background-position-y: 55px;
+    background-size: 60%;
+}
+
+.main1-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-family: 'Overpass', sans-serif;
+    padding: 0 20px 0 100px;
+}
+.mian1-right{
+    display: flex;
+    width: 50%;
+    float: left;
+}
+.main1 h3{
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    padding: 100px 0 100px 0;
+    font-family: 'Overpass', sans-serif;
+    color:hsl(208, 49%, 24%);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.main1 h5{
+    font-family: 'Overpass', sans-serif;
+    color:hsl(208, 49%, 24%);
+    font-weight: 700;
+}
+
+.main1-left h5{
+    margin: 0 40px 20px -190px;
+}
+
+.main2{
+    display: flex;
+    height: 350px;
+    background-color: hsl(237, 17%, 21%);
+    background-image: url("images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: -200px -500px;
+    border-radius: 0 70px 0 70px;
+}
+
+.left-img img{
+    margin: -60px 50px 0px 150px;
+    height: 500px;
+}
+
+.main2-right{
+    padding: 80px 120px 80px 10px;
+}
+.main2-right h2{
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+}
+
+.main2-right p{
+    padding-top: 20px;
+    color: hsl(240deg 5% 75%);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.main3{
+    background-image: url("images/illustration-laptop-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position:-250px 100px ;
+    height: 900px;
+}
+.main3-right{
+    
+    justify-content: right;
+    align-items: center;
+    padding: 250px 50px 100px 700px;
+}
+.main3-right h2{
+    color:hsl(208, 49%, 24%) ;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.main3-right p{
+    font-family: 'Overpass', sans-serif;
+    line-height: 25px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: hsl(240, 10%, 16%);
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    border-radius: 0 60px 0 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.footer li a{
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+    cursor: pointer;
+    font-size: 15px;
+}
+.footer li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.f1, .f2, .f3{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.footer.f1{
+    margin-bottom: 50px;
+}
+.footer a:hover{
+    color: white;
+    cursor: text;
+}
+.logo-footer{
+    margin: 60px 50px 0 100px;  
+}
+
+.footer-product,.footer-company,.footer-connect{
+   margin: 60px 100px;
+   justify-content: space-around;
+}
+
+.footer-product li{
+    margin: 10px 0 0 -32px;
+}
+.footer-company li{
+    margin: 10px 0 0 -32px;
+}
+.footer-connect li{
+    margin: 10px 0 0 -32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
